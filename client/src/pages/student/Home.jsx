@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Hero from './Hero';
+import Companies from './Companies';
+import SearchBar from './SearchBar'
+import CourseSection from './CourseSection';
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <div className="min-h-screen bg-white">
+      <Hero />
+      <SearchBar/> 
+      <CourseSection/>
+      <Companies/>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
