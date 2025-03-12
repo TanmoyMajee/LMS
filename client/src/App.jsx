@@ -1,20 +1,21 @@
 import React from 'react'
-import {Routes,Route} from 'react-router-dom'
+import {Routes,Route,useLocation} from 'react-router-dom'
 import Home from './pages/student/Home'
 import CourseList from './pages/student/CourseList'
 import CourseDetails from './pages/student/CourseDetails'
 import MyEnrollments from './pages/student/MyEnrollments'
 import Player from './pages/student/Player'
-import Loading from './pages/student/Loading'
+import Loading from './components/student/Loading'
 import Educator from './pages/educator/Educator'
 import AddCourse from './pages/educator/AddCourse'
 import MyCourse from './pages/educator/MyCourses'
 import StudentEnrolled from './pages/educator/StudentEnrolled'
 import DashBoard from './pages/educator/DashBoard'
-import Navbar from './pages/student/Navbar'
+import Navbar from './components/student/Navbar'
 
 // import Educator from './pages/educator/Educator' 
 function App() {
+  const location = useLocation()
   const isEducatorRoute = location.pathname.startsWith('/educator');
   return (
   <div className='text-default min-h-screen bg-white'>

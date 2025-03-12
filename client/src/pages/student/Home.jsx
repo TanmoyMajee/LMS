@@ -1,13 +1,13 @@
 import React from 'react';
-import Hero from './Hero';
-import Companies from './Companies';
-import SearchBar from './SearchBar'
-import CourseSection from './CourseSection';
+import Hero from '../../components/student/Hero'
+import SearchBar from '../../components/student/SearchBar'
+import CourseSection from '../../components/student/CourseSection'
+import Companies from '../../components/student/Companies'
 
 function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <Hero />
+      {/* <Hero /> */}
       <SearchBar/> 
       <CourseSection/>
       <Companies/>
