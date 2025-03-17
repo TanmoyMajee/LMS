@@ -20,8 +20,8 @@ import User from '../model/user_LMS.js'
       case 'user.created':{
         const userdata = {
           _id: data.id,
-          email: data.email_address[0].email_address,
-          name: data.name,
+          email: data.email_addresses[0].email_address,
+          name: data.first_name + ' ' + data.last_name,
           imageUrl: data.image_Url,
         }
         await User.create(userdata);
